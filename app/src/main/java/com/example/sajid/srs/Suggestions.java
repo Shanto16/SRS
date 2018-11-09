@@ -1,8 +1,10 @@
 package com.example.sajid.srs;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -39,5 +41,15 @@ public class Suggestions extends AppCompatActivity {
         sug_two_grade =findViewById(R.id.sug_two_grade);
         sug_three = findViewById(R.id.sug_three);
         sug_three_grade = findViewById(R.id.sug_three_grade);
+
+
+
+        calculate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Suggestions.this,RequiredGrade.class));
+            }
+        });
+
     }
 }

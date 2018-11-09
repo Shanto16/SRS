@@ -86,7 +86,7 @@
                         android:id="@+id/sug_one_grade"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="#d50000"
+                        android:background="#ef7110"
                         android:gravity="center"
                         android:text="F"
                         android:textColor="@color/white"
@@ -118,7 +118,7 @@
                         android:id="@+id/sug_two_grade"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="#d50000"
+                        android:background="#ef7110"
                         android:gravity="center"
                         android:text="D"
                         android:textColor="@color/white"
@@ -152,7 +152,7 @@
                         android:id="@+id/sug_three_grade"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:background="#d50000"
+                        android:background="#ef7110"
                         android:gravity="center"
                         android:text="C-"
                         android:textColor="@color/white"
@@ -166,18 +166,39 @@
 
         </android.support.v7.widget.CardView>
 
-        <Button
-            android:id="@+id/btn_okay"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="-12dp"
-            android:layout_marginEnd="16dp"
-            android:background="@drawable/bg_button"
-            android:text="Okay"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_okay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_decline_button"
+                android:text="Decline"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_okay"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_button"
+                android:text="Accept"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -256,12 +277,11 @@
             android:layout_height="50dp"
             android:layout_margin="8dp"
             android:background="@drawable/bg_button"
-            android:drawableRight="@drawable/ic_arrow"
             android:paddingStart="40dp"
             android:paddingLeft="40dp"
             android:paddingEnd="16dp"
             android:paddingRight="16dp"
-            android:text="Next"
+            android:text="Calculate"
             android:textColor="@color/colorAccent"
             android:textSize="20sp"
             android:textStyle="bold" />
